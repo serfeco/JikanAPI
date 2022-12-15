@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+   
+    <title>JikanApp</title>
+  </head>
+  <body>
+    <header>
+      <img src="2.png" alt="logo" height="130px" />
+      <nav>
+        <ul>
+          <li>
+            <div class="box">
+              <div class="search" action="">
+                <input id="query" type="text" placeholder="Busque un anime..." />
+                <button id="buscar" class="buscar">Buscar</button>
+              </div>
+            </div>
+          </li>
+          <li><select id="generos" class="btn-hover color-2"></select></li>
+          <li><button id="favoritos" class="btn-hover color-2">Favoritos</button></li>
+          <li><button id="comentarios" class="btn-hover color-2">Comentarios</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contenido wrapper">
+      <section id="listaAnime"></section>
+    </section>
+    <button id="cargarMas" onclick="getAnimes()">+</button>
+  </body>
+</html>
